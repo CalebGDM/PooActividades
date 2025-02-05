@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voleto</title>
+</head>
+<body>
+    <script>
+        const precioKm = 0.17
+        const dias = parseInt(prompt("Dias de viaje"))
+        const km = parseInt(prompt("Km de viaje"))
+        let precio = km * precioKm
+        if(dias > 7 && (km * 2) > 800){
+            precio *= 0.7
+        }
+        alert(`El precio del boleto es: ${precio}`)
+    </script>
+</body>
+</html>
