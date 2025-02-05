@@ -9,8 +9,8 @@
     <script>
         const precioKm = 0.17
         const dias = parseInt(prompt("Dias de viaje"))
-        const km = parseInt(prompt("Km de viaje"))
-        let precio = km * precioKm
+        const km = parseFloat(prompt("Km de viaje"))
+        let precio = km * 2 * precioKm
         if(dias > 7 && (km * 2) > 800){
             precio *= 0.7
         }
